@@ -3,7 +3,7 @@ package org.example;
 import java.util.Scanner;
 
 public class Main {
-    static Scanner scan = new Scanner(System.in);        //исследовал сам, что это useLocale(Locale.getDefault());
+    static Scanner scan = new Scanner(System.in);
     static Calculator calculatorObject = new Calculator();
     static MyFormatter myFormatter = new MyFormatter();
 
@@ -70,9 +70,8 @@ public class Main {
                 }
             }
         }
-        System.out.println("Добавленные товары:"); // после Завершить вывожу все
+        System.out.println("Добавленные товары:");
         calculatorObject.showItems();
-
         myFormatter.printFormatResult(calculatorObject.calculateMyTotal(), allGuests);
     }
 }
